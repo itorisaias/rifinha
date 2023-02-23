@@ -1,180 +1,354 @@
-<mxfile host="65bd71144e">
-    <diagram id="Zfuqkx13H48q_LOPqqUs" name="C1">
-        <mxGraphModel dx="1331" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="12" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="6">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="Criar, visualizar, editar e finalizar rifas&lt;br&gt;Realizar sorteio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="12">
-                    <mxGeometry x="-0.3618" y="-3" relative="1" as="geometry">
-                        <mxPoint x="-26" y="27" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Name="Seller" c4Type="Person" c4Description="Vendedor de premios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="2">
-                    <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="740" y="20" width="200" height="180" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="13" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="6">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" value="Resevar cotas" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="13">
-                    <mxGeometry x="0.3514" y="3" relative="1" as="geometry">
-                        <mxPoint x="-19" y="15" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="17" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="3" target="10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" value="Realiza pagamento" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="17">
-                    <mxGeometry x="-0.2741" y="-1" relative="1" as="geometry">
-                        <mxPoint x="8" y="9" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Name="Customer" c4Type="Person" c4Description="Comprador de numeros de rifas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="3">
-                    <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="180" y="290" width="200" height="180" as="geometry"/>
-                    </mxCell>
-                </object>
-                <object placeholders="1" c4Name="System name" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="5">
-                    <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="430" y="230" width="870" height="440" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="14" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="9">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="20" value="Envia e-mail de confirmação e notificações" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="14">
-                    <mxGeometry x="0.2064" y="2" relative="1" as="geometry">
-                        <mxPoint x="-25" y="2" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="15" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="6" target="10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="19" value="Gera ordem de compra, processa pagamento" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="15">
-                    <mxGeometry x="-0.4258" relative="1" as="geometry">
-                        <mxPoint y="20" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Name="Rifinha System" c4Type="Software System" c4Description="Permitir o vendedor criar rifas para ser vendidas diretamento pelo sistema e permiti comprar numeros de rifa" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="6">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="500" y="280" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="11" style="edgeStyle=none;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9" target="2">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" value="Envia e-mails para vendedor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="11">
-                    <mxGeometry x="0.4004" y="2" relative="1" as="geometry">
-                        <mxPoint x="35" y="6" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Name="E-mail System" c4Type="Software System" c4Description="Envia e-mails para autenticação e verificação de usuário" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="9">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="1030" y="280" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <object placeholders="1" c4Name="Gateway Payment System" c4Type="Software System" c4Description="Realiza a integração de pagamento e recebimento das vendas de rifas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="10">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="500" y="490" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-            </root>
-        </mxGraphModel>
-    </diagram>
-    <diagram id="PwWqyDRuJVM49OVQBkjA" name="C2">
-        <mxGraphModel dx="2443" dy="1832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <object placeholders="1" c4Name="Container name" c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="BQEZegDIdwA3oc-8reaq-1">
-                    <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="40" y="40" width="960" height="400" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-7" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="EqCO2YA7LdV9I04NkQNg-1" target="_ajPGt-qgyeDSTyYZ1Vx-1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Name="E-mail System" c4Type="Software System" c4Description="Sendgrid, resender, exchanger outlook" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="EqCO2YA7LdV9I04NkQNg-1">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="440" y="-125" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-5" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="AXPzU30SqCqJK4LbGnis-1" target="_ajPGt-qgyeDSTyYZ1Vx-2">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Name="Gateway Payment System" c4Type="Software System" c4Description="Realiza a integração de pagamento e recebimento das vendas de rifas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="AXPzU30SqCqJK4LbGnis-1">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="80" y="480" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <object placeholders="1" c4Type="Container name" c4Container="Container" c4Technology="Postgres, Sql Server, sqlite, mysql, mongodb, oracle" c4Description="Description of storage type container role/responsibility." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="Fg1P6p4TmVn1D0RAHraf-1">
-                    <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="740" y="80" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="_ajPGt-qgyeDSTyYZ1Vx-8" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-1" target="_ajPGt-qgyeDSTyYZ1Vx-3">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Name="Seller" c4Type="Person" c4Description="Vendedor de premios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="_ajPGt-qgyeDSTyYZ1Vx-1">
-                    <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="100" y="-200" width="200" height="180" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-4" style="edgeStyle=none;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-2" target="_ajPGt-qgyeDSTyYZ1Vx-4">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Name="Payment processor" c4Type="Container" c4Technology=".net core or nodejs" c4Description="Responsavel por processar pagamentos" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="_ajPGt-qgyeDSTyYZ1Vx-2">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0E7DAD;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="80" y="280" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-3" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=none;startFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-3" target="_ajPGt-qgyeDSTyYZ1Vx-4">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="440" y="150" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Type="Web application" c4Container="Container" c4Technology="Nextjs, Remix" c4Description="Gerenciar rifas, pagina de anuncio da rifa" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="_ajPGt-qgyeDSTyYZ1Vx-3">
-                    <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#118ACD;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="80" y="60" width="240" height="160" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="_ajPGt-qgyeDSTyYZ1Vx-7" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-4" target="Fg1P6p4TmVn1D0RAHraf-1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-6" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-4" target="EqCO2YA7LdV9I04NkQNg-1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-11" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="_ajPGt-qgyeDSTyYZ1Vx-4" target="OgLJjnZuan9oQ1MKOsla-10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Name="API Application" c4Type="Container" c4Technology="nodejs, .net core" c4Description="Description of container role/responsibility." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="_ajPGt-qgyeDSTyYZ1Vx-4">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0E7DAD;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
-                        <mxGeometry x="440" y="80" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-2" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="OgLJjnZuan9oQ1MKOsla-1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="80" y="130" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <object placeholders="1" c4Name="Customer" c4Type="Person" c4Description="Comprador de numeros de rifas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OgLJjnZuan9oQ1MKOsla-1">
-                    <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="-250" y="40" width="200" height="180" as="geometry"/>
-                    </mxCell>
-                </object>
-                <mxCell id="OgLJjnZuan9oQ1MKOsla-12" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="OgLJjnZuan9oQ1MKOsla-10" target="AXPzU30SqCqJK4LbGnis-1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <object placeholders="1" c4Type="Container name" c4Container="Container" c4Technology="Kafka, Redis, RabbitMQ" c4Description="Description of message bus type container role/responsibility." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OgLJjnZuan9oQ1MKOsla-10">
-                    <mxCell style="shape=cylinder3;size=15;direction=south;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="1">
-                        <mxGeometry x="440" y="280" width="240" height="120" as="geometry"/>
-                    </mxCell>
-                </object>
-            </root>
-        </mxGraphModel>
-    </diagram>
-</mxfile>
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1251px" height="801px" viewBox="-0.5 -0.5 1251 801" content="&lt;mxfile&gt;&lt;diagram id=&quot;Zfuqkx13H48q_LOPqqUs&quot; name=&quot;C1&quot;&gt;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&lt;/diagram&gt;&lt;diagram id=&quot;PwWqyDRuJVM49OVQBkjA&quot; name=&quot;C2&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="290" y="240" width="960" height="400" rx="10" ry="10" fill="none" stroke="#666666" stroke-dasharray="8 4" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-end; justify-content: unsafe flex-start; width: 942px; height: 1px; padding-top: 629px; margin-left: 300px;">
+                        <div data-drawio-colors="color: #333333; " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        <div style="text-align: left">
+                                            Container name
+                                        </div>
+                                    </b>
+                                </font>
+                                <div style="text-align: left">
+                                    [Container]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="300" y="629" fill="#333333" font-family="Helvetica" font-size="11px">
+                    Container name...
+                </text>
+            </switch>
+        </g>
+        <path d="M 690 135 L 556.37 135" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 551.12 135 L 558.12 131.5 L 556.37 135 L 558.12 138.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="690" y="75" width="240" height="120" rx="12" ry="12" fill="#8c8496" stroke="#736782" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 135px; margin-left: 691px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        E-mail System
+                                    </b>
+                                </font>
+                                <div>
+                                    [Software System]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#cccccc">
+                                            Sendgrid, resender, exchanger outlook
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="810" y="139" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    E-mail System...
+                </text>
+            </switch>
+        </g>
+        <path d="M 450 680 L 450 606.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 450 601.12 L 453.5 608.12 L 450 606.37 L 446.5 608.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="330" y="680" width="240" height="120" rx="12" ry="12" fill="#8c8496" stroke="#736782" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 740px; margin-left: 331px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Gateway Payment System
+                                    </b>
+                                </font>
+                                <div>
+                                    [Software System]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#cccccc">
+                                            Realiza a integração de pagamento e recebimento das vendas de rifas
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="450" y="744" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Gateway Payment System...
+                </text>
+            </switch>
+        </g>
+        <path d="M 990 295 C 990 286.72 1043.73 280 1110 280 C 1141.83 280 1172.35 281.58 1194.85 284.39 C 1217.36 287.21 1230 291.02 1230 295 L 1230 385 C 1230 393.28 1176.27 400 1110 400 C 1043.73 400 990 393.28 990 385 Z" fill="#23a2d9" stroke="#0e7dad" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1230 295 C 1230 303.28 1176.27 310 1110 310 C 1043.73 310 990 303.28 990 295" fill="none" stroke="#0e7dad" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 353px; margin-left: 991px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Container name
+                                    </b>
+                                </font>
+                                <div>
+                                    [Container: Postgres, Sql Server, sqlite, mysql, mongodb, oracle]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#E6E6E6">
+                                            Description of storage type container role/responsibility.
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="1110" y="356" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Container name...
+                </text>
+            </switch>
+        </g>
+        <path d="M 450 180 L 450 253.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 450 258.88 L 446.5 251.88 L 450 253.63 L 453.5 251.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="450" cy="40.5" rx="40.5" ry="40.5" fill="#083f75" stroke="#06315c" pointer-events="none"/>
+        <path d="M 350 105.3 C 350 82.93 368.13 64.8 390.5 64.8 L 509.5 64.8 C 531.87 64.8 550 82.93 550 105.3 L 550 139.5 C 550 161.87 531.87 180 509.5 180 L 390.5 180 C 368.13 180 350 161.87 350 139.5 Z" fill="#083f75" stroke="#06315c" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="450" cy="40.5" rx="40.5" ry="40.5" fill="#083f75" stroke="#06315c" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 198px; height: 1px; padding-top: 123px; margin-left: 351px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Seller
+                                    </b>
+                                </font>
+                                <div>
+                                    [Person]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#cccccc">
+                                            Vendedor de premios
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="450" y="126" fill="#ffffff" font-family="Helvetica" font-size="11px" text-anchor="middle">
+                    Seller...
+                </text>
+            </switch>
+        </g>
+        <path d="M 534.71 480 L 684.8 373.68" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 689.09 370.65 L 685.4 377.55 L 684.8 373.68 L 681.35 371.84 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="330" y="480" width="240" height="120" rx="12" ry="12" fill="#23a2d9" stroke="#0e7dad" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 540px; margin-left: 331px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Payment processor
+                                    </b>
+                                </font>
+                                <div>
+                                    [Container: .net core or nodejs]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#E6E6E6">
+                                            Responsavel por processar pagamentos
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="450" y="543" fill="#ffffff" font-family="Helvetica" font-size="11px" text-anchor="middle">
+                    Payment processor...
+                </text>
+            </switch>
+        </g>
+        <path d="M 570 340 L 683.63 340" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 688.88 340 L 681.88 343.5 L 683.63 340 L 681.88 336.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 330 268 C 330 263.58 333.58 260 338 260 L 562 260 C 566.42 260 570 263.58 570 268 L 570 412 C 570 416.42 566.42 420 562 420 L 338 420 C 333.58 420 330 416.42 330 412 Z" fill="#118acd" stroke="#0e7dad" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 335 268 C 335 266.34 336.34 265 338 265 L 511 265 C 512.66 265 514 266.34 514 268 L 514 274 C 514 275.66 512.66 277 511 277 L 338 277 C 336.34 277 335 275.66 335 274 Z M 519 268 C 519 266.34 520.34 265 522 265 L 528 265 C 529.66 265 531 266.34 531 268 L 531 274 C 531 275.66 529.66 277 528 277 L 522 277 C 520.34 277 519 275.66 519 274 Z M 536 268 C 536 266.34 537.34 265 539 265 L 545 265 C 546.66 265 548 266.34 548 268 L 548 274 C 548 275.66 546.66 277 545 277 L 539 277 C 537.34 277 536 275.66 536 274 Z M 553 268 C 553 266.34 554.34 265 556 265 L 562 265 C 563.66 265 565 266.34 565 268 L 565 274 C 565 275.66 563.66 277 562 277 L 556 277 C 554.34 277 553 275.66 553 274 Z M 335 290 C 335 285.58 338.58 282 343 282 L 557 282 C 561.42 282 565 285.58 565 290 L 565 407 C 565 411.42 561.42 415 557 415 L 343 415 C 338.58 415 335 411.42 335 407 Z" fill="#23a2d9" stroke="none" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 340px; margin-left: 331px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Web application
+                                    </b>
+                                </font>
+                                <div>
+                                    [Container: Nextjs, Remix]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#E6E6E6">
+                                            Gerenciar rifas, pagina de anuncio da rifa
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="450" y="344" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Web application...
+                </text>
+            </switch>
+        </g>
+        <path d="M 930 340 L 983.63 340" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 988.88 340 L 981.88 343.5 L 983.63 340 L 981.88 336.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 810 280 L 810 201.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 810 196.12 L 813.5 203.12 L 810 201.37 L 806.5 203.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 810 400 L 810 473.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 810 478.88 L 806.5 471.88 L 810 473.63 L 813.5 471.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <rect x="690" y="280" width="240" height="120" rx="12" ry="12" fill="#23a2d9" stroke="#0e7dad" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 340px; margin-left: 691px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        API Application
+                                    </b>
+                                </font>
+                                <div>
+                                    [Container: nodejs, .net core]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#E6E6E6">
+                                            Description of container role/responsibility.
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="810" y="343" fill="#ffffff" font-family="Helvetica" font-size="11px" text-anchor="middle">
+                    API Application...
+                </text>
+            </switch>
+        </g>
+        <path d="M 200 330 L 323.63 330" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 328.88 330 L 321.88 333.5 L 323.63 330 L 321.88 326.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="100" cy="280.5" rx="40.5" ry="40.5" fill="#083f75" stroke="#06315c" pointer-events="none"/>
+        <path d="M 0 345.3 C 0 322.93 18.13 304.8 40.5 304.8 L 159.5 304.8 C 181.87 304.8 200 322.93 200 345.3 L 200 379.5 C 200 401.87 181.87 420 159.5 420 L 40.5 420 C 18.13 420 0 401.87 0 379.5 Z" fill="#083f75" stroke="#06315c" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="100" cy="280.5" rx="40.5" ry="40.5" fill="#083f75" stroke="#06315c" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 198px; height: 1px; padding-top: 363px; margin-left: 1px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Customer
+                                    </b>
+                                </font>
+                                <div>
+                                    [Person]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#cccccc">
+                                            Comprador de numeros de rifas
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="100" y="366" fill="#ffffff" font-family="Helvetica" font-size="11px" text-anchor="middle">
+                    Customer...
+                </text>
+            </switch>
+        </g>
+        <path d="M 738 600 L 574.89 735.92" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 570.86 739.28 L 574 732.11 L 574.89 735.92 L 578.48 737.49 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 750 435 C 750 426.72 776.86 420 810 420 C 825.91 420 841.17 421.58 852.43 424.39 C 863.68 427.21 870 431.02 870 435 L 870 645 C 870 653.28 843.14 660 810 660 C 776.86 660 750 653.28 750 645 Z" fill="#23a2d9" stroke="#0e7dad" stroke-miterlimit="10" transform="rotate(90,810,540)" pointer-events="none"/>
+        <path d="M 870 435 C 870 443.28 843.14 450 810 450 C 776.86 450 750 443.28 750 435" fill="none" stroke="#0e7dad" stroke-miterlimit="10" transform="rotate(90,810,540)" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 203px; height: 1px; padding-top: 540px; margin-left: 696px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                <font style="font-size: 16px">
+                                    <b>
+                                        Container name
+                                    </b>
+                                </font>
+                                <div>
+                                    [Container: Kafka, Redis, RabbitMQ]
+                                </div>
+                                <br/>
+                                <div>
+                                    <font style="font-size: 11px">
+                                        <font color="#E6E6E6">
+                                            Description of message bus type container role/responsibility.
+                                        </font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="798" y="544" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Container name...
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>
