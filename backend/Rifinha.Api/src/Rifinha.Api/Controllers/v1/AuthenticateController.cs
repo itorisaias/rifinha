@@ -2,9 +2,9 @@
 
 namespace Rifinha.Api.Controllers.v1
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class RifinhaController : ControllerBase
+    public class AuthenticateController : ControllerBase
     {
     }
 }
