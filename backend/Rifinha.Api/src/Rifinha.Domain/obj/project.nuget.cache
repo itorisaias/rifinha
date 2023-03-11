@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jjQMCg+7cUup/tVYPuvX4DQt3HRGJeU3iu2rnaQrg0VSxuMmH23NTyIixQpQccfHnrFDNsHOaczdCw/hcKygIQ==",
+  "success": true,
+  "projectFilePath": "D:\\D\\Rifinha\\backend\\Rifinha.Api\\src\\Rifinha.Domain\\Rifinha.Domain.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://34.95.136.247:8081/repository/my-packs/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
