@@ -1,6 +1,6 @@
 ﻿namespace Rifinha.Domain.Models.Contracts.v1;
 
-public interface IService<T> where T : class
+public interface IServices<T> where T : class
 {
     public Task<T> GetAsync(int id);
     public Task<T> GetAsync();
