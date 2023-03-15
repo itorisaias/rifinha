@@ -1,0 +1,137 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User Module
+model User {
+  id         String    @id @default(uuid())
+  name       String?
+  password   String?
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now()) @updatedAt
+  deleted_at DateTime?
+
+  contacts Contact[]
+
+  raffle Raffle[]
+  quotas Quota[]
+}
+
+model Contact {
+  type                       ContactType
+  value                      String      @unique
+  confirmed_token            String
+  confirmed_token_expierd_at DateTime
+  confirmed_at               DateTime?
+  created_at                 DateTime    @default(now())
+  updated_at                 DateTime    @default(now()) @updatedAt
+  deleted_at                 DateTime?
+  user                       User        @relation(fields: [user_id], references: [id])
+  user_id                    String
+
+  @@id([user_id, type])
+}
+
+// Raffle Module
+model Raffle {
+  id    String @id @default(uuid())
+  title String
+  slug  String @unique
+
+  start_at  DateTime?
+  // publish_at DateTime?
+  finish_at DateTime?
+
+  saller    User   @relation(fields: [saller_id], references: [id])
+  saller_id String
+
+  reward Reward?
+  yield  Yield?
+  quotas Quota[]
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now()) @updatedAt
+  deleted_at DateTime?
+
+  @@index([slug])
+}
+
+model Reward {
+  id          String @id @default(uuid())
+  description String
+  price       Float
+  raffle_id   String @unique
+  raffle      Raffle @relation(fields: [raffle_id], references: [id])
+}
+
+model Yield {
+  estimated_roi_percent Float?
+  quota_price           Float?
+
+  raffle_id String @unique
+  raffle    Raffle @relation(fields: [raffle_id], references: [id])
+}
+
+model Quota {
+  id          BigInt      @id @default(autoincrement())
+  status      QuotaStatus @default(FREE)
+  created_at  DateTime    @default(now())
+  reserved_at DateTime?
+  payed_at    DateTime?
+  raffle_id   String      @unique
+  raffle      Raffle      @relation(fields: [raffle_id], references: [id])
+  customer_id String?
+  customer    User?       @relation(fields: [customer_id], references: [id])
+  payment_id  String?
+  payment     Payment?
+}
+
+// Finance Module
+model Payment {
+  id String @id @default(uuid())
+
+  quota_id BigInt @unique
+  quota    Quota  @relation(fields: [quota_id], references: [id])
+
+  last_check DateTime?
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now()) @updatedAt
+}
+
+// Enums and Types
+enum PaymentStatus {
+  PENDING
+  PROCESSED
+  DONE
+  CANCELED
+}
+
+enum QuotaStatus {
+  FREE
+  RESERVED
+  PAYED
+}
+
+enum ContactType {
+  EMAIL
+  PHONE
+  TEL_PHONE
+  OTHER
+}
+
+// System settings
+model Plan {
+  id          String    @id @default(uuid())
+  title       String
+  description String
+  // status // possivelmente para promoção
+  fee         Float
+  created_at  DateTime  @default(now())
+  updated_at  DateTime  @default(now()) @updatedAt
+  deleted_at  DateTime?
+}

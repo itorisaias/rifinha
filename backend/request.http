@@ -1,0 +1,38 @@
+# @name signIn
+POST http://localhost:3000/api/authenticate/local/sign_in
+Content-Type: application/x-www-form-urlencoded
+
+email=jhon.doe@mail.com
+&password=123456789
+
+###
+
+# @name signUp
+POST http://localhost:3000/api/authenticate/local/sign_up
+Content-Type: application/json
+
+{
+  "name": "Itor Isaias",
+  "email": "itor.isaias@gmail.com",
+  "passport": "321",
+  "confirm_password": "321"
+}
+
+###
+
+# @name userInfo
+GET http://localhost:3000/api/authenticate
+
+###
+
+# @name logout
+GET http://localhost:3000/api/authenticate/logout
+
+###
+
+# @name createRaffle
+POST http://localhost:3000/api/raffle
+Content-Type: application/json
+
+{
+}
