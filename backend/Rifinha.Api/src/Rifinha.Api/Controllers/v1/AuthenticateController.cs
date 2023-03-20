@@ -6,5 +6,10 @@ namespace Rifinha.Api.Controllers.v1
     [ApiController]
     public class AuthenticateController : ControllerBase
     {
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok();
+        }
     }
 }

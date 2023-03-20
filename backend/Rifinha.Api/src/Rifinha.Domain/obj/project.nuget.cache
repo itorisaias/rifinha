@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sz1S3WIC9CfhNts04mYKGLrUQ6wWhslvoAGUeQAUQnBFqy2PxU04UvpUUYemz58IljRWzoWuNmBLLl9UkUNvkA==",
+  "dgSpecHash": "dkx92xJ0qDkDHkU8d30kIsBNmwvP/UL6ycjmVefc73k9wKLyk3TVFBf8aRmbdW6z0RByFRxtXQEg6coiiHdrFQ==",
   "success": true,
   "projectFilePath": "D:\\D\\Rifinha\\backend\\Rifinha.Api\\src\\Rifinha.Domain\\Rifinha.Domain.csproj",
   "expectedPackageFiles": [
@@ -16,12 +16,5 @@
     "C:\\Users\\Alexandre\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Alexandre\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://34.95.136.247:8081/repository/my-packs/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  "logs": []
 }

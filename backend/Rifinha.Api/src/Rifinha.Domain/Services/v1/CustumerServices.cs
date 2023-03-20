@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-using Rifinha.Domain.Models.Contracts.v1;
+﻿using Rifinha.Domain.Models.Contracts.v1;
 using Rifinha.Domain.Models.Entities.v1;
 
 namespace Rifinha.Domain.Services.v1

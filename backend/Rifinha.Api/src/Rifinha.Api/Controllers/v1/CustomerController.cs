@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Rifinha.Api.Controllers.v1
 {
@@ -6,5 +7,11 @@ namespace Rifinha.Api.Controllers.v1
     [ApiController]
     public class CustomerController : ControllerBase
     {
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Get()
+        {
+            return Ok();
+        }
     }
 }

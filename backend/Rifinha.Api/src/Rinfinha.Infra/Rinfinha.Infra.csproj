@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rifinha.Domain\Rifinha.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
