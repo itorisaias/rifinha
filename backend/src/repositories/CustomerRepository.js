@@ -4,7 +4,6 @@ import prisma from '../config/database.js'
 export default class CustomerRepository {
   async index() {
     const user = await prisma.users.findMany()
-    await prisma.$disconnect()
     return user
   }
 
@@ -18,7 +17,6 @@ export default class CustomerRepository {
         updated_at: new Date(),
       },
     })
-    await prisma.$disconnect()
     return newUser
   }
 
@@ -28,7 +26,6 @@ export default class CustomerRepository {
         id: +userId,
       },
     })
-    await prisma.$disconnect()
     return returnedUser
   }
 
@@ -42,7 +39,6 @@ export default class CustomerRepository {
         updated_at: new Date(),
       },
     })
-    await prisma.$disconnect()
     return updatedUser
   }
 
@@ -52,7 +48,6 @@ export default class CustomerRepository {
         id: +userId,
       },
     })
-    await prisma.$disconnect()
     return deletedUser
   }
 }
