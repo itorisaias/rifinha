@@ -2,15 +2,21 @@
 CREATE TYPE "PaymentStatus" AS ENUM ('PENDING', 'PROCESSED', 'DONE', 'CANCELED');
 
 -- CreateEnum
+CREATE TYPE "RaffleStatus" AS ENUM ('WAIT_PAYMENT', 'PAYED', 'CANCELED');
+
+-- CreateEnum
 CREATE TYPE "QuotaStatus" AS ENUM ('FREE', 'RESERVED', 'PAYED');
 
 -- CreateEnum
-CREATE TYPE "ContactType" AS ENUM ('EMAIL', 'PHONE', 'TEL_PHONE', 'OTHER');
+CREATE TYPE "ContactType" AS ENUM ('EMAIL', 'PHONE', 'TEL_PHONE', 'INSTAGRAM', 'OTHER');
+
+-- CreateEnum
+CREATE TYPE "TypeOfDraw" AS ENUM ('RANDOM', 'PICK');
 
 -- CreateTable
 CREATE TABLE "User" (
-    "id" TEXT NOT NULL,
-    "name" TEXT,
+    "id" SERIAL NOT NULL,
+    "name" VARCHAR(200),
     "password" TEXT,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -29,19 +35,28 @@ CREATE TABLE "Contact" (
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" TIMESTAMP(3),
-    "user_id" TEXT NOT NULL,
+    "user_id" INTEGER NOT NULL,
 
     CONSTRAINT "Contact_pkey" PRIMARY KEY ("user_id","type")
 );
 
 -- CreateTable
 CREATE TABLE "Raffle" (
-    "id" TEXT NOT NULL,
+    "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
+    "description" TEXT,
     "slug" TEXT NOT NULL,
+    "numbers_quantity" INTEGER NOT NULL,
+    "minimal_numbers" INTEGER,
+    "maximum_numbeers" INTEGER,
+    "location" TEXT,
+    "payment_date_at" TIMESTAMP(3),
+    "expiration_time_for_payment" INTEGER,
+    "type_of_draw" "TypeOfDraw",
     "start_at" TIMESTAMP(3),
     "finish_at" TIMESTAMP(3),
-    "saller_id" TEXT NOT NULL,
+    "owner_id" INTEGER NOT NULL,
+    "winner_id" INTEGER,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "deleted_at" TIMESTAMP(3),
@@ -50,11 +65,22 @@ CREATE TABLE "Raffle" (
 );
 
 -- CreateTable
+CREATE TABLE "Category" (
+    "id" TEXT NOT NULL,
+    "label" TEXT NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "deleted_at" TIMESTAMP(3),
+
+    CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "Reward" (
     "id" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "price" DOUBLE PRECISION NOT NULL,
-    "raffle_id" TEXT NOT NULL,
+    "raffle_id" INTEGER NOT NULL,
 
     CONSTRAINT "Reward_pkey" PRIMARY KEY ("id")
 );
@@ -63,7 +89,7 @@ CREATE TABLE "Reward" (
 CREATE TABLE "Yield" (
     "estimated_roi_percent" DOUBLE PRECISION,
     "quota_price" DOUBLE PRECISION,
-    "raffle_id" TEXT NOT NULL
+    "raffle_id" INTEGER NOT NULL
 );
 
 -- CreateTable
@@ -73,8 +99,8 @@ CREATE TABLE "Quota" (
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "reserved_at" TIMESTAMP(3),
     "payed_at" TIMESTAMP(3),
-    "raffle_id" TEXT NOT NULL,
-    "customer_id" TEXT,
+    "raffle_id" INTEGER NOT NULL,
+    "customer_id" INTEGER,
     "payment_id" TEXT,
 
     CONSTRAINT "Quota_pkey" PRIMARY KEY ("id")
@@ -111,16 +137,10 @@ CREATE UNIQUE INDEX "Contact_value_key" ON "Contact"("value");
 CREATE UNIQUE INDEX "Raffle_slug_key" ON "Raffle"("slug");
 
 -- CreateIndex
-CREATE INDEX "Raffle_slug_idx" ON "Raffle"("slug");
-
--- CreateIndex
 CREATE UNIQUE INDEX "Reward_raffle_id_key" ON "Reward"("raffle_id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Yield_raffle_id_key" ON "Yield"("raffle_id");
-
--- CreateIndex
-CREATE UNIQUE INDEX "Quota_raffle_id_key" ON "Quota"("raffle_id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Payment_quota_id_key" ON "Payment"("quota_id");
@@ -129,7 +149,10 @@ CREATE UNIQUE INDEX "Payment_quota_id_key" ON "Payment"("quota_id");
 ALTER TABLE "Contact" ADD CONSTRAINT "Contact_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "Raffle" ADD CONSTRAINT "Raffle_saller_id_fkey" FOREIGN KEY ("saller_id") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Raffle" ADD CONSTRAINT "Raffle_owner_id_fkey" FOREIGN KEY ("owner_id") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Raffle" ADD CONSTRAINT "Raffle_winner_id_fkey" FOREIGN KEY ("winner_id") REFERENCES "User"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Reward" ADD CONSTRAINT "Reward_raffle_id_fkey" FOREIGN KEY ("raffle_id") REFERENCES "Raffle"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

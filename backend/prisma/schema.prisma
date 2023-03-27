@@ -9,7 +9,7 @@ datasource db {
 
 // User Module
 model User {
-  id         String    @id @default(uuid())
+  id         Int       @id @default(autoincrement())
   name       String?
   password   String?
   created_at DateTime  @default(now())
@@ -17,9 +17,9 @@ model User {
   deleted_at DateTime?
 
   contacts Contact[]
-
-  raffle Raffle[]
-  quotas Quota[]
+  raffles Raffle[] @relation("RafflesOwner")
+  wins    Raffle[] @relation("RafflesWin")
+  quotas  Quota[]
 }
 
 model Contact {
@@ -32,40 +32,72 @@ model Contact {
   updated_at                 DateTime    @default(now()) @updatedAt
   deleted_at                 DateTime?
   user                       User        @relation(fields: [user_id], references: [id])
-  user_id                    String
+  user_id                    Int
 
   @@id([user_id, type])
 }
 
+// model Provider {
+
+// }
+
 // Raffle Module
 model Raffle {
-  id    String @id @default(uuid())
-  title String
-  slug  String @unique
+  id                          Int         @id @default(autoincrement())
+  title                       String
+  description                 String?
+  slug                        String      @unique
+  numbers_quantity            Int
+  minimal_numbers             Int?
+  maximum_numbeers            Int?
+  location                    String?
+  payment_date_at             DateTime?
+  expiration_time_for_payment Int?
+  type_of_draw                TypeOfDraw?
+  start_at                    DateTime?
+  finish_at                   DateTime?
 
-  start_at  DateTime?
-  // publish_at DateTime?
-  finish_at DateTime?
+  owner_id  Int
+  owner     User  @relation("RafflesOwner", fields: [owner_id], references: [id])
+  winner_id Int?
+  winner    User? @relation("RafflesWin", fields: [winner_id], references: [id])
 
-  saller    User   @relation(fields: [saller_id], references: [id])
-  saller_id String
-
-  reward Reward?
-  yield  Yield?
-  quotas Quota[]
+  rewards Reward[]
+  yield   Yield?
+  quotas  Quota[]
+  // combos Combo[]
 
   created_at DateTime  @default(now())
   updated_at DateTime  @default(now()) @updatedAt
   deleted_at DateTime?
-
-  @@index([slug])
 }
+
+// status  da rifa
+// medias para rifa
+// winner
+
+model Category {
+  id    String @id @default(uuid())
+  label String
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @default(now()) @updatedAt
+  deleted_at DateTime?
+}
+
+// model Combo {
+//   id String @id @default(uuid())
+//   numbers_quantity Int
+//   price Float
+//   raffle_id Int
+//   raffle Raffle @relation(fields: [raffle_id], references: [id])
+// }
 
 model Reward {
   id          String @id @default(uuid())
   description String
   price       Float
-  raffle_id   String @unique
+  raffle_id   Int    @unique
   raffle      Raffle @relation(fields: [raffle_id], references: [id])
 }
 
@@ -73,7 +105,7 @@ model Yield {
   estimated_roi_percent Float?
   quota_price           Float?
 
-  raffle_id String @unique
+  raffle_id Int    @unique
   raffle    Raffle @relation(fields: [raffle_id], references: [id])
 }
 
@@ -83,9 +115,9 @@ model Quota {
   created_at  DateTime    @default(now())
   reserved_at DateTime?
   payed_at    DateTime?
-  raffle_id   String      @unique
+  raffle_id   Int
   raffle      Raffle      @relation(fields: [raffle_id], references: [id])
-  customer_id String?
+  customer_id Int?
   customer    User?       @relation(fields: [customer_id], references: [id])
   payment_id  String?
   payment     Payment?
@@ -111,6 +143,12 @@ enum PaymentStatus {
   CANCELED
 }
 
+enum RaffleStatus {
+  WAIT_PAYMENT
+  PAYED
+  CANCELED
+}
+
 enum QuotaStatus {
   FREE
   RESERVED
@@ -121,7 +159,13 @@ enum ContactType {
   EMAIL
   PHONE
   TEL_PHONE
+  INSTAGRAM
   OTHER
+}
+
+enum TypeOfDraw {
+  RANDOM
+  PICK
 }
 
 // System settings
